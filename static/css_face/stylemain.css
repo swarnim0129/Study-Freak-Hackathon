@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    /* background-color: black !important; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.4);
+    padding-top:20px ;
+    padding-right:10% ;
+    padding-left:10% ;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    /* background-color: rgba(0,0,0,0.4); */
+}
+.container .container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.content{
+    /* height: 40vh; */
+    text-align:center;
+    /* background-color: rgba(0,0,0,0.4); */
+}
+.content h1{
+    font-size:95px;
+    color:#fff;
+    margin-bottom:50px;
+}
+.content .home{
+    font-size:23px;
+    color:#fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition:all ease-in-out 0.3s;
+}
+.content .home:hover{
+    background-color: #fff;
+    color: #000;
+    
+}
+.background-clip{
+    position: absolute;
+    /* top: 0px; */
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* background-color: rgba(0,0,0,0.4); */
+}
+.logo{
+    color: #fff;
+}
+span{
+    color: #ea1538;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    transition:tranform 0.3s ease;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: #ea1538;
+    text-decoration: solid #fff;
+}
+nav ul li a.bvp:hover{
+    color: #fff;
+    text-decoration: solid #fff;
+}
+
+nav ul li:hover{
+    transform: translateY(-3px);
+} 
+
+.container .container2 .content .home:hover {
+    color:#ea1538
+}
+.signup{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.login{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.signup:hover{
+    color:#ea1538;
+   
+}
+.login:hover{
+    color:#ea1538;
+    
+}
+.visit{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #fff;
+    /* background-color: rgba(0,0,0,0.4); */
+}
+.container .container2 .content .visit a{
+    color: #fff;
+     text-decoration: none;
+}
