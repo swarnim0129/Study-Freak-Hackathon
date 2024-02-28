@@ -16,3 +16,8 @@
 .team{
     color:li;
 }
+#hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

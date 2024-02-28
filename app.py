@@ -21,9 +21,50 @@ def save_registered_data(data):
 
 registered_data = load_registered_data()
 
+@app.route("/face")
+def face():
+    return render_template("face.html")
+
+
+
 @app.route("/")
 def index():
-    return render_template("face.html")
+    return render_template("index.html")
+
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/loginpage")
+def loginpage():
+    return render_template("login.html")
+@app.route("/signup")
+def signup():
+    return render_template("signup.html")
+
+@app.route("/firstyr")
+def firstyr():
+    return render_template("first_yr.html")
+
+@app.route("/secyr")
+def secyr():
+    return render_template("second_yr.html")
+
+@app.route("/thirdyr")
+def thirdyr():
+    return render_template("third_yr.html")
+
+# @app.route("/")
+# def index():
+#     return render_template("face.html")
+
+# @app.route("/")
+# def index():
+#     return render_template("face.html")
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -31,7 +72,7 @@ def register():
         name = request.form.get("name")
         photo = request.files['photo']
 
-        uploads_folder = os.path.join(os.getcwd(), "static", "uploads")
+        uploads_folder = os.path.join(os.getcwd(), "static", "uploads","registered")
 
         if not os.path.exists(uploads_folder):
             os.makedirs(uploads_folder)
@@ -54,7 +95,7 @@ def register():
 def login():
     try:
         photo = request.files['photo']
-        uploads_folder = os.path.join(os.getcwd(), "static", "uploads")
+        uploads_folder = os.path.join(os.getcwd(), "static", "uploads","logins")
 
         if not os.path.exists(uploads_folder):
             os.makedirs(uploads_folder)

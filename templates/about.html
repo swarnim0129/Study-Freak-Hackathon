@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="/css/styleabout.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css_face/styleabout.css')}}">
   <link rel="icon" href="/image/logomyapp-removebg-preview.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -85,7 +85,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="/image/logomyapp-removebg-preview.png" width="25px" alt="logo">
+      <a class="navbar-brand" href="#"><img src="static/image/logomyapp-removebg-preview.png" width="25px" alt="logo">
         Study<span style="color: #ea1538;">Freak</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,10 +94,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link" aria-current="page" href="/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="about.html">About Us</a>
+            <a class="nav-link active" href="/about">About Us</a>
           </li>
 
           <!-- <li class="nav-item">
@@ -112,21 +112,21 @@
     </div>
   </nav>
   <div class="about-section">
-    <h1 class="team">Team Study-Freak</h1>
+    <h1 class="team">Team Tech-Titans</h1>
     <p>Hi Programmer!!! <br>
-      Glen Rumao and Rion Tuscano this side.This website was devloped for our microproject which provides you with notes and syllabus of computer engineering department
+      Rion Tuscano,Swarnim Bane,Harsh Tandel,Atharva Sankhe this side.This website was devloped for our microproject which provides you with notes and syllabus of computer engineering department
     </p>
     <p>
       Special Thanks to Vaghela sir for his guidance and information.</p>
     <p>To check out more visit our github repo: <a href="https://github.com/Riontuscano/Study-Freak">Study freak</a></p>
   </div>
 <u>
-  <h2 class="text-center" >Our Team</h2>
+  <h2 class="text-center">Our Team</h2>
 </u>
-  <div class="row mx-5">
-    <div class="column mx-5 ">
+  <div class="row mx-2"id="hello">
+    <div class="column mx-2">
       <div class="card">
-        <img src="https://media.licdn.com/dms/image/D4D03AQHgOwny_mgrYQ/profile-displayphoto-shrink_800_800/0/1698069657223?e=1703721600&v=beta&t=J98uQOzhxD6lZA9FfA06F3GHZM3zkHtuNTYSqo3kRsw" alt="Rion" style="width:100%">
+        <img src="static/image/RIon.jpeg" alt="Rion" style="width:100%;height: 400px;">
         <div class="container">
           <h2>Rion Tuscano</h2>
           <p class="title">Student of Bahusaheb Vartak polytechnic</p>
@@ -137,14 +137,39 @@
       </div>
     </div>
 
-    <div class="column mx-5">
+    <div class="column mx-2">
       <div class="card">
-        <img src="https://media.licdn.com/dms/image/D4D03AQHn_Xk8P0q0jw/profile-displayphoto-shrink_800_800/0/1692619203475?e=1703721600&v=beta&t=9kDnkf9GgpTbhTT6zYkz8g6Gaei7_jFbDoqnb9qokzE" alt="Glen" style="width:100%">
+        <img src="static/image/swan.jpeg" alt="Glen" style="width:100%; height:auto; max-height:400px;">
         <div class="container">
-          <h2>Glen Rumao</h2>
+          <h2>Swarnim Bane</h2>
           <p class="title">Student of Bahusaheb Vartak polytechnic</p>
           <p>Developer & Designer.</p>
-          <p>glenrumao@gmail.com</p>
+          <p>swarnimbane1234@gmail.com</p>
+          <p>  <a href="https://www.linkedin.com/in/glen-rumao/" class="button">Contact</a></p>
+          <!-- <p><button class="button">Contact</button></p> -->
+        </div>
+      </div>
+    </div>
+    <div class="column mx-2">
+      <div class="card">
+        <img src="static/image/Harsh.jpeg" alt="Rion" style="width:100%; height: 400px;">
+        <div class="container">
+          <h2>Harsh Tandel</h2>
+          <p class="title">Student of Bahusaheb Vartak polytechnic</p>
+          <p>Developer & Designer</p>
+          <p>harshtandel@gamil.com</p>
+          <p>  <a href="https://www.linkedin.com/in/rion-tuscano-1b5008263/" class="button">Contact</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="column mx-2">
+      <div class="card">
+        <img src="static/image/Atharva.jpeg" alt="Glen" style="width:100%;height: 400px;">
+        <div class="container">
+          <h2>Atharva Sankhe</h2>
+          <p class="title">Student of Bahusaheb Vartak polytechnic</p>
+          <p>Developer & Designer.</p>
+          <p>AtharvaSbro@gmail.com</p>
           <p>  <a href="https://www.linkedin.com/in/glen-rumao/" class="button">Contact</a></p>
           <!-- <p><button class="button">Contact</button></p> -->
         </div>

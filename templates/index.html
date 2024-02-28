@@ -15,13 +15,13 @@
         <nav>
             <h2 class="logo">Study<span>Freak</span></h2>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="about.html">Contact Us</a></li>
             </ul>
           <ul>
-            <li><a class="signup" href="signup.html">SignUp</a></li>
-            <li><a class="login" href="login.html">Login</a></li>
+            <li><a class="signup" href="/face">SignUp</a></li>
+            <li><a class="login" href="/">Login</a></li>
           </ul>
         </nav>
     </div>
@@ -31,9 +31,11 @@
                 <source src="static/image/final1.mp4" type="video/mp4">
                 <!-- /image/home.mp4 -->
             </video>
-            <div class="content">
+            <div class="content" style="margin-left: 120px;">
                 <h1>Explore <span> More </span></h1>
-                <a class="home" href="templates/face.html" >Verify Yourself</a>
+                <!-- <a class="home" href="https://sparkling-starship-e44032.netlify.app/">Start Learning</a> -->
+                <a class="home" href="/face">Verify Yourself</a>
+                
                 <div class="visit">
                     <a href="">
                         <span>Visit </span>Study-freak
@@ -43,7 +45,7 @@
           
         </div>
     </div>
-
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
 </body>
 
 </html>

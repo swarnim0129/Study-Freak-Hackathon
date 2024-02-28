@@ -11,13 +11,13 @@
   
     <meta charset="UTF-8">
     <title>  Registration Form | Study-Freak | B.V.P</title>
-    <link rel="stylesheet" href="/css/stylesign.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css_face/stylesign.css')}}">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/image/logomyapp-removebg-preview.png" width="25px" alt="logo">
+          <!-- <a class="navbar-brand" href="#"><img src="/image/logomyapp-removebg-preview.png" width="25px" alt="logo"> -->
             Study<span style="color: #ea1538;">Freak</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,6 +86,6 @@
         </div>
       </div>
     </div>
-    <script src="/js/signup.js"></script>
+    <script src="{{url_for('static', filename='js/signup.js')}}"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@ function register() {
         .then(data => {
             if (data.success) {
                 alert("Data successfully registered");
-                window.location.href = "/";
+                window.location.href = "/face";
             } else {
                 alert("Sorry, registration failed");
             }
@@ -85,7 +85,8 @@ function login() {
             if (data.success) {
                 alert("Login success");
                 // Redirecting to the desired page
-                window.location.href = `/success?user_name=${nameInput.value}`;
+                // window.location.href = `/success?user_name=${nameInput.value}`;
+                window.location.href="/home"
             } else {
                 alert("Login failed, please try again");
             }
