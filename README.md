@@ -8,5 +8,5 @@ to run this file go to app.py and activate the virtual enviornment use
 
 then after activating enter following command to run the flask file
 
-"flask run"
+"python app.py"
  
