@@ -12,7 +12,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="static/image/logomyapp-removebg-preview.png" width="25px" alt="logo">
+      <a class="navbar-brand" href="#"><img src="/image/logomyapp-removebg-preview.png" width="25px" alt="logo">
         Study<span style="color: #ea1538;">Freak</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page"href="home.html">Home</a>
+            <a class="nav-link active" aria-current="page"href="index.html">Home</a>
           </li>
          
          
@@ -295,6 +295,9 @@
 
 <h1 class="gradient-text mx-3 my-2 " id="professor"></h1>
 <h2 class="professor mx-3 my-2 " id="professorn"></h2>
+
+<center><h1 id="beforenotes" style="opacity: 0.5;margin-top: 250px;">Click on notes to access it</h1></center>
+
 <style>
   .gradient-text {
     background: linear-gradient(45deg, #6b666a, #3333ff);
@@ -321,8 +324,9 @@
         height="500"> -->
       </center>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="/js/index.js"></script>
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <script src="{{url_for('static', filename='js/index.js')}}"></script>
+        
+      <div class="footer text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2023 Copyright <b>|</b>
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/">StudyFreak.in </a> <b>|</b> All Rights Reserved
       </div>

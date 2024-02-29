@@ -47,15 +47,15 @@
     <form action="">
       <div class="field email">
         <div class="input-area">
-          <input type="email" placeholder="Email Address">
-          <i class="icon fas fa-envelope"></i>
+          <input type="text" placeholder="Username" id="username">
+          <i class="icon fas fa-user"></i>
           <!-- <i class="error error-icon fas fa-exclamation-circle"></i> -->
         </div>
         <!-- <div class="error error-txt">Email can't be blank</div> -->
       </div>
       <div class="field password">
         <div class="input-area">
-          <input type="password" placeholder="Password">
+          <input type="password" id="pass" placeholder="Password">
           <i class="icon fas fa-lock"></i>
           <!-- <i class="error error-icon fas fa-exclamation-circle"></i> -->
         </div>
@@ -63,7 +63,7 @@
       </div>
       <div class="pass-txt"><a href="#">Forgot password?</a></div>
       <!-- <button id="fetch-data-button">Fetch Data</button> -->
-      <input type="submit" id="fetch-data-button" value="Login">
+<input type="button" id="fetch-data-button" onclick="login()" value="Login">
     </form>
     <div class="sign-txt">Not yet member? <a href="signup.html">Signup now</a></div>
   </div>

@@ -97,9 +97,9 @@
           
   </header>
     <main>
-      <div class="size">
-        <div class="image d-flex">
-          <div class="autot col-lg-4 p-3 m-4"><br><br>
+      <div class="size ">
+        <div class="image d-flex ">
+          <div class="autot col-lg-4 p-4 mt-5" style="margin-left: 63px;"><br><br>
             <h2><b>Welcome To <span class="auto-type"></span></b></h2>
             <h4>Learn <span class="auto-type2"></span></h4><br><br>
             <p class="description">StudyFreak is a comprehensive educational website designed to assist students in their academic journey. 
@@ -326,7 +326,7 @@
   </div>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script src="/js/index.js"></script>
+  <script src="{{url_for('static', filename='js/index.js')}}"></script>
   <script>
     var typed = new Typed(".auto-type", {
       strings: ["Study-Freak"],

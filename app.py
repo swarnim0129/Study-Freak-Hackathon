@@ -58,13 +58,6 @@ def secyr():
 def thirdyr():
     return render_template("third_yr.html")
 
-# @app.route("/")
-# def index():
-#     return render_template("face.html")
-
-# @app.route("/")
-# def index():
-#     return render_template("face.html")
 
 @app.route("/register", methods=["POST"])
 def register():
