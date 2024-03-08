@@ -13,7 +13,7 @@
         <video id="video" width="440" height="280" autoplay src=""></video>
         <br>
         <!-- Button Capture Photo -->
-        <button class="capture-btn" onclick="capture()">Capture Photo Face</button>
+        <button class="capture-btn" onclick="capture()" style="font-size: 18px;">Capture Photo Face</button>
         <br>
         <!-- Your face cam -->
         <canvas id="canvas" width="400" height="280" style="display: none;"></canvas>
@@ -22,10 +22,13 @@
         <div class="form-container">
             <h3>Register Account</h3>
             <label for="name">Your Name</label>
-            <input type="text" id="name" required placeholder="Enter your name">
+            <input type="text" id="name"  style="font-size: 18px" placeholder="Enter your name">
             <br>
-            <button class="register-btn" onclick="register()">Register</button>
-            <button class="login-btn" onclick="login()">Login Now</button>
+            <div>
+                <button class="register-btn" onclick="register()" style="font-size: 18px;">Register</button>
+                <button class="login-btn" onclick="login()" style="font-size: 18px;">Login Now</button>
+            </div>
+                
         </div>
     </div>
 

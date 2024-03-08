@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo A.I.</title>
+    <style>
+        #chat-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .response {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Echo A.I. Chat</h1>
+    <div id="chat-container"></div>
+    <form id="query-form">
+        <label for="query">Your query:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="button" onclick="submitQuery()">Submit</button>
+    </form>
+    <script>
+        function submitQuery() {
+            const userQuery = document.getElementById('query').value;
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('POST', '/process_query', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    updateChat(response.response, response.chat_history);
+                    alert(response.response);
+                }
+            };
+
+            xhr.send('query=' + encodeURIComponent(userQuery));
+        }
+
+        function updateChat(response, chatHistory) {
+            const chatContainer = document.getElementById('chat-container');
+            const responseDiv = document.createElement('div');
+            responseDiv.classList.add('response');
+            responseDiv.textContent = response;
+            chatContainer.appendChild(responseDiv);
+
+            // Display chat history
+            const historyDiv = document.createElement('div');
+            historyDiv.textContent = chatHistory;
+            chatContainer.appendChild(historyDiv);
+        }
+    </script>
+</body>
+</html>

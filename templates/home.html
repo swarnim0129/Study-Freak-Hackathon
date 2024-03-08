@@ -99,15 +99,19 @@
     <main>
       <div class="size ">
         <div class="image d-flex ">
-          <div class="autot col-lg-4 p-4 mt-5" style="margin-left: 63px;"><br><br>
+          <div class="autot col-lg-4 p-4 mt-5" style="margin-left: 63px; margin-right: 70px;"><br><br>
             <h2><b>Welcome To <span class="auto-type"></span></b></h2>
             <h4>Learn <span class="auto-type2"></span></h4><br><br>
             <p class="description">StudyFreak is a comprehensive educational website designed to assist students in their academic journey. 
               The platform is dedicated to helping learners access a wide range of study materials, including notes and Syllabus, 
               to enhance their educational experience. </p><br>
             </div>
-          <div style="justify-content: right;" class="statingimg mx-5"><br><br>
-          <img  src="static/image/startingimg.jpg" style="border-radius: 20px;" width="800px" height="400px" alt="studyfreak">
+          <div style="justify-content: right;" class="statingimg mx-5" style="width: 800px;"><br><br>
+          <!-- <img  src="static/image/startingimg.jpg" style="border-radius: 20px;" width="800px" height="400px" alt="studyfreak"> -->
+          <video autoplay muted loop plays-inline class="background-clip" style="border-radius: 30px;" width="700px" height="400px" alt="studyfreak">
+            <source src="static/image/mainintro.mp4" type="video/mp4">
+            <!-- /image/home.mp4 -->
+        </video>
             </div>
             <!-- <img class="text-center" src="logomyapp-removebg-preview.png" alt=""> -->
           </div><br><br><br><br><br> 
@@ -122,7 +126,7 @@
               <div class="card-body">
                 <h5 class="card-title" style="color:black">Java-Reference Book</h5>
                 <p class="card-text mt-5">"Java: The Complete Reference" is an authoritative and comprehensive guide to the Java programming language, written by renowned Java expert, Herbert Schildt.</p> <br><br>
-                <a href="#" class="btn btn-primary">Get now</a>
+                <a href="https://referenceglobe.com/CollegeLibrary/library_books/20180203082936JavaTheCompleteReference.pdf" class="btn btn-primary">Get now</a>
               </div>
             </div>
               <div class="card mx-5 " style="width: 18rem;">
@@ -130,7 +134,7 @@
               <div class="card-body">
                 <h5 class="card-title" style="color:black">The Python Book</h5>
                 <p class="card-text mt-5">"Python Programming: A Comprehensive Guide" is a definitive resource for individuals seeking to master the Python programming language. Authored by renowned Python expert.  </p><br><br>
-                <a href="#" class="btn btn-primary">Get now</a>
+                <a href="https://cfm.ehu.es/ricardo/docs/python/Learning_Python.pdf" class="btn btn-primary">Get now</a>
               </div>
             </div>
             <div class="card mx-5 " style="width: 18rem;">
@@ -138,7 +142,7 @@
               <div class="card-body">
                 <h5 class="card-title" style="color:black">Javascript-scope & Closures</h5>
                 <p class="card-text mt-3">"JavaScript Scope & Closures: Mastering the Art of Variable Scope and Function Closures" is a comprehensive guide.  </p><br><br><br>
-                <a href="#" class="btn btn-primary">Get now</a>
+                <a href="https://jmvidal.cse.sc.edu/library/resig06a.pdf" class="btn btn-primary">Get now</a>
               </div>
             </div>
               <div class="card mx-5 " style="width: 18rem;">
@@ -146,7 +150,7 @@
               <div class="card-body">
                 <h5 class="card-title" style="color:black">C++ in one day</h5>
                 <p class="card-text mt-3">"C++ in One Day: A Crash Course for Beginners" is your quick and comprehensive introduction to the C++ programming language.</p><br><br><br><br><br>
-                <a href="#" class="btn btn-primary">Get now</a>
+                <a href="https://library.uc.edu.kh/userfiles/pdf/18.SAMS%20Teach%20Yourself%20C++%20in%20One%20Hour%20a%20Day.pdf" class="btn btn-primary">Get now</a>
               </div>
             </div>
           </div>
@@ -328,7 +332,7 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="{{url_for('static', filename='js/index.js')}}"></script>
   <script>
-    var typed = new Typed(".auto-type", {
+    var typed = new Typed(".auto-type", {       
       strings: ["Study-Freak"],
       typeSpeed: 30,
       showCursor: false 

@@ -1,7 +1,7 @@
-// // b1 = document.getElementById("fy1_eng");
-// // b1.addEventListener( "click",() => { document.getElementById("display_n_yr1").setAttribute("src", "/media/onlieform.pdf");});
+// b1 = document.getElementById("fy1_eng");
+// b1.addEventListener( "click",() => { document.getElementById("display_n_yr1").setAttribute("src", "/media/onlieform.pdf");});
 // b1 = document.getElementById("fy1_bsc");
-// b1.addEventListener( "click",display(value) => { document.getElementById("display_n_yr1").setAttribute("src", "https://drive.google.com/file/d/13Ly3UGliqpjMIK9xElIZ6A24GfYyTvTS/view");});
+// b1.addEventListener( "click",() => { document.getElementById("display_n_yr1").setAttribute("src","/media/onlieform.pdf" );});
 // b1 = document.getElementById("fy1_bms");
 // b1.addEventListener( "click",() => { document.getElementById("display_n_yr1").setAttribute("src", "/media/onlieform.pdf");});
 // b1 = document.getElementById("fy1_egm");

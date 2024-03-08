@@ -25,8 +25,6 @@ registered_data = load_registered_data()
 def face():
     return render_template("face.html")
 
-
-
 @app.route("/")
 def index():
     return render_template("index.html")
