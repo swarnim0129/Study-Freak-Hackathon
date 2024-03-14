@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/swarnimsachinbane/Web_FaceRecog_Flask/Face_recognition-JS-Flask/venv"
+VIRTUAL_ENV="/Users/swarnimsachinbane/Desktop/projects /Web_FaceRecog_Flask/Face_recognition-JS-Flask/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

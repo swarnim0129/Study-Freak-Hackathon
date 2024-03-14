@@ -120,7 +120,7 @@ def login():
                     return jsonify(response)
 
         response = {"success": False, "error": "No matching face found in registered data"}
-        return jsonify(response)
+        return jsonify(response)         
 
     except Exception as e:
         # Log the exception for debugging

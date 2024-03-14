@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/swarnimsachinbane/Web_FaceRecog_Flask/Face_recognition-JS-Flask/venv"
+setenv VIRTUAL_ENV "/Users/swarnimsachinbane/Desktop/projects /Web_FaceRecog_Flask/Face_recognition-JS-Flask/venv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

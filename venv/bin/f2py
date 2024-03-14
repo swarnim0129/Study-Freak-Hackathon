@@ -1,4 +1,6 @@
-#!/Users/swarnimsachinbane/Web_FaceRecog_Flask/Face_recognition-JS-Flask/venv/bin/python3.11
+#!/bin/sh
+'''exec' "/Users/swarnimsachinbane/Desktop/projects /Web_FaceRecog_Flask/Face_recognition-JS-Flask/venv/bin/python3.11" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

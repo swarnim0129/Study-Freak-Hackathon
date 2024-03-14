@@ -10,6 +10,13 @@
     <title>StudyFreak-By Bhausaheb Vartak polytechnic</title>
 </head>
 <body>
+  <style>
+   
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  </style>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid">
@@ -264,9 +271,9 @@
           </li>
         
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="syllabus">
+            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="syllabus">
                 Syllabus
-            </a>
+            </a> -->
             <ul class="dropdown-menu">
               <li class="dropdown-item disabled " >First Sem</li>
               <div class="dropdown-divider"></div>
@@ -287,10 +294,238 @@
           </li>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <!-- <a class="btn btn-outline-success mx-2" href="signup.html">Sign up</a> -->
-        <h3>First <span style="color: #ea1538;">Year</span></h3> 
-      </form>
+      <!-- <style>
+        .bx-search-alt{
+    position: relative;
+    font-size: 2.2rem;
+    padding-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #000;
+  }
+ 
+  .auth {
+    position: relative;
+    z-index: -1;
+  }
+  
+  .auth li {
+    padding-right: 2px;
+  }
+  #menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    padding-top: 12px;
+    display: none;
+  }
+
+  .cart{
+    position: fixed;
+    top:0;
+    right:0;
+    right:-100%;
+    width:800px;
+    max-height: 100vh;
+    min-height: 100vh;
+    /* padding: 20px; */
+    background: var(--outgoing-chat-bg);
+    overflow: hidden;
+    overflow-y: auto !important;
+    
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.5s;
+    
+  }
+  .cart.active{
+    right: 0;
+  }
+  .chat-title{
+    color: white;
+    margin: 10px ;
+  }
+ 
+  #close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    padding-right: 20px;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+.chat-container .chat {
+ 
+    padding: 25px 10px;
+    color:var(--text-color);
+    display: flex;
+    /* justify-content:center; */
+}
+.chat-container .chat.outgoing{
+    background:var(--outgoing-chat-bg);
+    border: 1px solid var(--outgoing-chat-border);
+    
+}
+.chat-container .chat.incoming{
+    background:var(--incoming-chat-bg);
+    border: 1px solid var(--incoming-chat-border);
+
+}
+.chat .chat-details img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.chat .chat-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* max-width: 1200px;
+    width: 100%; */
+}
+.chat .chat-content span{
+    font-size:1.3rem;
+    color:var(--icon-color)
+}
+.chat .chat-details{
+    display: flex;
+    align-items: center;
+}
+
+.chat .chat-details p{
+    font-size: 12px;
+    padding: 0 40px 0 20px;
+    white-space: prewrap;
+}
+.typing-animation{
+    display: inline-flex;
+    padding-left:25px ;
+}
+.typing-animation .typing-dot{
+    height: 7px;
+    width: 7px;
+    opacity: 0.7;
+    border-radius: 50%;
+    margin:0 3px;
+    background: var(--text-color);
+    animation:animatedot 1.5s var(--delay) ease-in-out infinite;
+}
+
+@keyframes animatedot {
+    0%,44%{
+    transform: translateY(0px);
+}
+22%{
+    transform: translateY(-6px);
+}
+44%{
+    opacity: 0.2;
+}
+}
+
+.typing-container {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    
+    background: var(--outgoing-chat-bg);
+    border:1px solid var(--incoming-chat-bg); 
+}
+.typing-container .typing-content{
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.typing-content .typing-textarea{
+    width:100%;
+    display:flex;
+    position: relative;
+}
+.typing-textarea textarea{
+    width: 100%;
+    height: 55px;
+    border: none;
+    resize: none;
+    color: var(--text-color);
+    background: var(--incoming-chat-bg);
+    font-size: 14px;
+    padding: 15px 45px 15px 20px;
+    outline: 1px solid var(--incoming-chat-border);
+}
+.typing-textarea textarea::placeholder{
+    color:var(--placeholder-color)
+
+}
+.typing-textarea textarea:valid ~ i{
+    visibility: visible;
+}
+.typing-textarea .bx-send{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    visibility: hidden;
+    cursor: pointer;
+}
+:where(.cart,textarea,body)::-webkit-scrollbar{
+    width: 6px;
+  }
+  :where(.cart,textarea,body)::-webkit-scrollbar-track{
+    background: var(--incoming-chat-bg);
+    border-radius: 25px;
+  }
+  :where(.cart,textarea,body)::-webkit-scrollbar-thumb{
+    background: var(--icon-color);
+    border-radius: 25px;
+  }
+  </style>-->
+        <form class="d-flex" role="search">
+          <!-- <a class="btn btn-outline-success mx-2" href="signup.html">Sign up</a> -->
+          <h3>First <span style="color: #ea1538;">Year</span></h3> 
+        </form>
+      <!-- <ul class="auth">
+        <li><a href="#"><i class='bx bx-search-alt' id="nav-cart"></i></a></li>
+        <div class="bx bx-menu" id="menu-icon"></div>
+       
+        <div class="subwrap">
+            <div class="submenu">
+                <div class="info-user">
+                    
+                </div>
+            </div>
+        </div>
+     
+        </ul>
+         <ul class="cart">
+          <center><h2 class="chat-title">Study-Freak AI</h2></center>
+          <div class="chat-container">
+           
+     
+          </div>
+          <div class="typing-container">
+            <div class="typing-content">
+              <div class="typing-textarea">
+                <textarea name="" id="chat-input" placeholder="Enter your doubt........." required></textarea>
+                <i class='bx bx-send' id="send-btn"></i>
+              </div>
+            </div>
+          </div>
+       
+           
+            <ion-icon name="arrow-forward-circle" id="close-cart"></ion-icon>
+        
+        
+        </ul>  
+         -->
     </div>
   </div>
 </nav>
